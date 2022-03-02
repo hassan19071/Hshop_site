@@ -1,0 +1,81 @@
+/* start login */
+.close-cont{
+    transform: scale(0);
+}
+.cont{
+    width: 100%;
+    background-color: rgba(#333,.3);
+    height: 100vh;
+    top:0;
+    left:0;
+    z-index:200;
+    .close-login{
+        left: 300% !important;
+    }
+    .login{
+        width: 60%;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        background-color: #f9f9f9;
+        transform: translateX(-50%) translateY(-50%);
+        transition:left 1s linear;
+        .close{
+            font-size:30px;
+            color: #222;
+            top: -10px;
+            right:-10px;
+            cursor: pointer;
+            z-index: 10;
+        }
+        .decore{
+           @media (min-width:992px) {
+           & {height: 500px !important;border-radius: 0 50% 50% 0;}
+           }
+           @media (max-width:991px) {
+            & {
+                height: 200px !important;
+                border-radius: 0 0% 50% 50%;
+                img{
+                 width: 200px !important;  
+                 right: 20% !important;
+                }
+            }
+            }
+           background-color: $mainColor;
+           position: relative;
+           img{
+               position: absolute;
+               z-index: 3;
+               width:100%;
+               bottom: 0;
+               right:-10%;
+           }
+        }
+        form{
+            padding: 40px;
+            p{
+                text-align: center;
+                font-family: $firstFont;
+                color:$mainColor;
+                text-transform: uppercase;
+                font-size:25px;
+            }
+            .inpu{
+                width: 100%;
+                margin: 10px 0;
+                border: 1px solid rgba(rgb(114, 113, 113) , .4);
+                padding: 8px 10px;
+                color: #111;
+                font-size: 17px;
+            }
+            .sub{
+                background-color: $mainColor;
+                border: none;
+                padding: 8px 15px;
+                color: #f9f9f9;
+            }
+        }
+    }
+}
+/* end login */

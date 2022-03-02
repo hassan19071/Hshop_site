@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hshop</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="fonts/MochiyPopPOne-Regular.ttf" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Zen+Kaku+Gothic+Antique:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--start header-->
+    <div class="header">
+      <div class="head-top d-none d-lg-block">
+        <div class="container">
+          <div class="row p-0 m-0 align-items-center">
+            <div class="col p-0 shop-info d-flex align-items-center">
+              <div>
+                <i class="fa fa-envelope"></i>
+                <span>Hello@gmail.com</span>
+              </div>
+              <div>
+                <i class="fa fa-phone"></i>
+                <span>+01152205570</span>
+              </div>
+            </div>
+            <div
+              class="
+                col
+                p-0
+                d-flex
+                align-items-center
+                settings
+                justify-content-end
+              "
+            >
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+              <div class="lang position-relative">
+                <img src="images/language.png" alt="" />
+                <span class="lang-type">En</span>
+                <div class="langs-list position-absolute">
+                  <p data-lang="En">english</p>
+                  <p data-lang="Ar">arabic</p>
+                </div>
+              </div>
+              <div class="login">
+                <a href="#"><i class="fa fa-user"></i> <span>Login</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--start navbar-->
+      <div class="first-nav d-lg-block d-none">
+        <div
+          class="container d-flex align-items-center justify-content-between"
+        >
+          <a href="#" class="nav-brand"
+            >Hshop <img src="images/logo-leaves.png" alt=""
+          /></a>
+          <ul class="d-flex align-items-center list-unstyled m-0">
+            <li>
+              <a
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="shop.html"
+                class="active"
+                >Shope</a
+              >
+            </li>
+            <li class="pages">
+              <a href="#">Pages</a>
+              <ul>
+                <li>
+                  <a
+                    href="shop-details.html"
+                    >Shop Details</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="shoping-cart.html"
+                    >Shoping Cart</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="checkout.html"
+                    >Check Out</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href="blog.html"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="icons d-flex align-items-center">
+            <div class="position-relative me-3">
+              <i class="fa fa-heart"></i>
+              <span class="position-absolute">4</span>
+            </div>
+            <div class="position-relative">
+              <i class="fa fa-shopping-bag"></i>
+              <span class="position-absolute">5</span>
+            </div>
+            <div class="item ms-4">
+              <p class="m-0">item: <strong>$120.00</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar">
+        <div
+          class="
+            container
+            d-flex d-lg-none
+            align-items-center
+            justify-content-between
+          "
+        >
+          <a href="#" class="nav-brand"
+            >Hshop <img src="images/logo-leaves.png" alt=""
+          /></a>
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <!--end navbar-->
+
+      <!--start aside bar-->
+      <div class="aside position-fixed d-lg-none close-aside">
+        <div class="aside-menu position-relative">
+          <i class="fas fa-times position-absolute close"></i>
+          <a href="#" class="nav-brand"
+            >Hshop <img src="images/logo-leaves.png" alt=""
+          /></a>
+          <div class="icons d-flex align-items-center">
+            <div class="position-relative me-3">
+              <i class="fa fa-heart"></i>
+              <span class="position-absolute">4</span>
+            </div>
+            <div class="position-relative">
+              <i class="fa fa-shopping-bag"></i>
+              <span class="position-absolute">5</span>
+            </div>
+            <div class="item ms-4">
+              <p class="m-0">item: <strong>$120.00</strong></p>
+            </div>
+          </div>
+          <div class="d-flex align-items-center settings">
+            <div class="lang position-relative">
+              <img src="images/language.png" alt="" />
+              <span class="lang-type">En</span>
+              <div class="langs-list position-absolute">
+                <p data-lang="En">english</p>
+                <p data-lang="Ar">arabic</p>
+              </div>
+            </div>
+            <div class="login">
+              <a href="#"><i class="fa fa-user"></i> <span>Login</span></a>
+            </div>
+          </div>
+
+          <ul class="m-0 list-unstyled">
+            <li>
+              <a
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="shope.html"
+                class="active"
+                >Shope</a
+              >
+            </li>
+            <li class="pages">
+              <a href="#">Pages</a>
+              <ul>
+                <li>
+                  <a
+                    href="shop-details.html"
+                    >Shop Details</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="shoping-cart.html"
+                    >Shoping Cart</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="checkout.html"
+                    >Check Out</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href="blog.html"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+
+          <div class="msg">
+            <i class="fa fa-envelope"></i>
+            <span>Hello@gmail.com</span>
+          </div>
+          <div class="call">
+            <i class="fa fa-phone"></i>
+            <span>+01152205570</span>
+          </div>
+        </div>
+      </div>
+      <!--end aside bar-->
+
+      <!--start head-bottom-->
+      <div class="head-bottom">
+        <div class="container">
+          <div class="row p-0 m-0">
+            <div class="col-12 col-lg-3 departs p-0 d-flex align-items-center">
+              <i class="fa fa-bars"></i>
+              <p class="m-0">All departments</p>
+              <div class="menu">
+                <ul>
+                  <li><a href="#">Fresh Meat</a></li>
+                  <li><a href="#">Vegetables</a></li>
+                  <li><a href="#">Fruits & Nut Gifts</a></li>
+                  <li><a href="#">Ocean Foods</a></li>
+                  <li><a href="#">Butter & Eggs</a></li>
+                  <li><a href="#">Fresh Onion</a></li>
+                  <li><a href="#">Fastfood</a></li>
+                  <li><a href="#">Fresh Meat</a></li>
+                  <li><a href="#">Fresh Berries</a></li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="
+                col
+                search-bar
+                col-lg
+                p-0
+                d-flex
+                align-items-center
+                justify-content-between
+                mt-4 mt-lg-0
+              "
+            >
+              <p class="m-0 d-none d-md-block">All Categories</p>
+              <div class="search position-relative">
+                <input type="text" placeholder="What do you need" />
+                <button class="position-absolute">Search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end head bottom-->
+    </div>
+    <!--end header-->
+
+    <!--start login-->
+    <div class="cont position-fixed close-cont">
+      <div class="login close-login">
+        <i class="fas fa-times position-absolute close"></i>
+        <div class="row m-0 p-0 align-items-center">
+          <div class="col-lg-5 p-0 decore">
+            <img src="images/login-img.png" alt="" />
+          </div>
+          <div class="col-lg p-0">
+            <form action="">
+              <p>Login</p>
+              <input type="text" placeholder="username" class="d-block inpu" />
+              <input
+                type="password"
+                placeholder="password"
+                class="d-block inpu"
+              />
+              <div class="d-flex align-items-center justify-content-between">
+                <div><input type="checkbox" /> <span>Remember me</span></div>
+                <input type="submit" class="sub" />
+              </div>
+              <a href="#">forgot your password?</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end login-->
+
+    <!--start about-shop-->
+    <div class="about-shop">
+      <div class="container">
+        <h2>Organic Shop</h2>
+      </div>
+    </div>
+    <!-- end about-shop -->
+
+    <!--start products-->
+    <div class="all-products">
+      <div class="container text-center">
+        <h2>products</h2>
+        <div
+          class="
+            row
+            products
+            m-0
+            p-0
+            align-items-center
+            justify-content-md-between justify-content-center
+          "
+        >
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="meat"
+          >
+            <div class="img position-relative">
+              <img src="images/product-12.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="fruits"
+          >
+            <div class="img position-relative">
+              <img src="images/product-11.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="vegetables"
+          >
+            <div class="img position-relative">
+              <img src="images/product-10.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="fastfood"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-4.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="meat"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-6.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="fruits"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-7.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="vegetables"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-8.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="fastfood"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-4.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="meat"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-6.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="fruits"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-1.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="vegetables"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-3.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="fastfood"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-7.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="
+            row
+            products
+            close-products
+            m-0
+            p-0
+            align-items-center
+            justify-content-md-between justify-content-center
+          "
+        >
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="meat"
+          >
+            <div class="img position-relative">
+              <img src="images/product-11.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="fruits"
+          >
+            <div class="img position-relative">
+              <img src="images/product-10.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="vegetables"
+          >
+            <div class="img position-relative">
+              <img src="images/product-12.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="fastfood"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-8.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="meat"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-4.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="fruits"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-1.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="vegetables"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-2.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="fastfood"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-6.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="meat"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-3.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="fruits"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-8.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="vegetables"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-1.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="fastfood"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-3.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="
+            row
+            products
+            close-products
+            m-0
+            p-0
+            align-items-center
+            justify-content-md-between justify-content-center
+          "
+        >
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="meat"
+          >
+            <div class="img position-relative">
+              <img src="images/product-11.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="fruits"
+          >
+            <div class="img position-relative">
+              <img src="images/product-10.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="vegetables"
+          >
+            <div class="img position-relative">
+              <img src="images/product-12.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="fastfood"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-1.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="meat"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-7.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="fruits"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-8.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="vegetables"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-6.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="fastfood"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-5.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="meat"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-3.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="fruits"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-4.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="vegetables"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-1.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="fastfood"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-2.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="
+            row
+            products
+            close-products
+            m-0
+            p-0
+            align-items-center
+            justify-content-md-between justify-content-center
+          "
+        >
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="meat"
+          >
+            <div class="img position-relative">
+              <img src="images/product-11.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="fruits"
+          >
+            <div class="img position-relative">
+              <img src="images/product-10.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="vegetables"
+          >
+            <div class="img position-relative">
+              <img src="images/product-9.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="fastfood"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-8.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="meat"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-1.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="fruits"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-7.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="vegetables"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-5.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="fastfood"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-2.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="meat"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-3.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="fruits"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-7.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="vegetables"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-1.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 col-12 p-0 text-center"
+            data-food="fastfood"
+          >
+            <div class="img position-relative">
+              <img src="images/feature-4.jpg" alt="" />
+              <div class="food-info position-absolute">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-retweet"></i></a>
+              </div>
+            </div>
+            <div class="food-name">
+              <p>Food Name</p>
+              <span>$10.00</span>
+            </div>
+          </div>
+        </div>
+
+        <ul class="list-unstyled bullets"></ul>
+      </div>
+    </div>
+    <!--end products-->
+
+    <!--start discount-->
+    <div class="discount">
+      <div class="container text-center">
+        <h2>Products with discount</h2>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="text-center dis position-relative">
+              <div class="discount-number">-20%</div>
+              <div class="img position-relative">
+                <img src="images/feature-4.jpg" alt="" />
+                <div class="food-info position-absolute">
+                  <a href="#"><i class="fa fa-heart"></i></a>
+                  <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                  <a href="#"><i class="fa fa-retweet"></i></a>
+                </div>
+              </div>
+              <div class="food-name">
+                <p>Food Name</p>
+                <span>$25.00</span>
+                <span class="d-block after-discount">$20.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="text-center dis position-relative">
+              <div class="discount-number">-20%</div>
+              <div class="img position-relative">
+                <img src="images/feature-6.jpg" alt="" />
+                <div class="food-info position-absolute">
+                  <a href="#"><i class="fa fa-heart"></i></a>
+                  <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                  <a href="#"><i class="fa fa-retweet"></i></a>
+                </div>
+              </div>
+              <div class="food-name">
+                <p>Food Name</p>
+                <span>$25.00</span>
+                <span class="d-block after-discount">$20.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="text-center dis position-relative">
+              <div class="discount-number">-20%</div>
+              <div class="img position-relative">
+                <img src="images/feature-1.jpg" alt="" />
+                <div class="food-info position-absolute">
+                  <a href="#"><i class="fa fa-heart"></i></a>
+                  <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                  <a href="#"><i class="fa fa-retweet"></i></a>
+                </div>
+              </div>
+              <div class="food-name">
+                <p>Food Name</p>
+                <span>$25.00</span>
+                <span class="d-block after-discount">$20.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="text-center dis position-relative">
+              <div class="discount-number">-20%</div>
+              <div class="img position-relative">
+                <img src="images/feature-2.jpg" alt="" />
+                <div class="food-info position-absolute">
+                  <a href="#"><i class="fa fa-heart"></i></a>
+                  <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                  <a href="#"><i class="fa fa-retweet"></i></a>
+                </div>
+              </div>
+              <div class="food-name">
+                <p>Food Name</p>
+                <span>$25.00</span>
+                <span class="d-block after-discount">$20.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="text-center dis position-relative">
+              <div class="discount-number">-20%</div>
+              <div class="img position-relative">
+                <img src="images/feature-3.jpg" alt="" />
+                <div class="food-info position-absolute">
+                  <a href="#"><i class="fa fa-heart"></i></a>
+                  <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                  <a href="#"><i class="fa fa-retweet"></i></a>
+                </div>
+              </div>
+              <div class="food-name">
+                <p>Food Name</p>
+                <span>$25.00</span>
+                <span class="d-block after-discount">$20.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="text-center dis position-relative">
+              <div class="discount-number">-20%</div>
+              <div class="img position-relative">
+                <img src="images/feature-5.jpg" alt="" />
+                <div class="food-info position-absolute">
+                  <a href="#"><i class="fa fa-heart"></i></a>
+                  <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                  <a href="#"><i class="fa fa-retweet"></i></a>
+                </div>
+              </div>
+              <div class="food-name">
+                <p>Food Name</p>
+                <span>$25.00</span>
+                <span class="d-block after-discount">$20.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end discount -->
+
+    <!--start footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row m-0 data-foot">
+          <div class="col-md p-0 title">
+            <a href="#">Hshop <img src="images/logo-leaves.png" alt="" /></a>
+            <div class="shop-info">
+              <ul class="list-unstyled">
+                <li>
+                  <i class="fa fa-envelope"></i>
+                  <span>Hello@gmail.com</span>
+                </li>
+                <li>
+                  <i class="fa fa-phone"></i>
+                  <span>+01152205570</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md p-0 links mt-3 mt-md-0">
+            <h3>Our Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md p-0 subscribe mt-3 mt-md-0">
+            <h3>Newsletter</h3>
+            <form action="">
+              <input type="email" placeholder="Enter your email" />
+              <button>Subscribe</button>
+            </form>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="foot text-center">
+          Copyright ©2021 All rights reserved to Hassan
+        </div>
+      </div>
+    </footer>
+    <!--end footer-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/poper.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

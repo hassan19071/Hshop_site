@@ -1,0 +1,191 @@
+/* start vegetables packages */
+.vegetables-packages{
+    margin: 80px 0;
+    .imgs{
+        .main-img{
+            height: 400px;
+            img{
+                width: 80%;
+                margin: auto;
+            
+            }
+        }
+        .products-options{
+            .owl-nav{
+                margin-top: 20px !important;
+                .owl-prev , .owl-next{
+                    background-color: $mainColor !important;
+                    width: 20px;
+                    height: 20px;
+                    color: #f9f9f9 !important;
+                    margin: 20px;
+                    line-height: 20px;
+                    outline: none;
+                    border: none;
+                }
+            }
+        }
+    }
+    .your-choose{
+        h3{
+            font-size: 20px;
+            font-weight: 900;
+            font-family: $firstFont;
+        }
+        .rate{
+            margin: 20px 0;
+            i{
+                color: $mainColor;
+            }
+            span{
+                margin-left: 10px;
+                font-weight: 600;
+            }
+        }
+        h4{
+            font-size: 20px;
+            font-family: $firstFont;
+            color: $mainColor;
+        }
+        p{
+            margin: 20px 0;
+        }
+        .cart{
+            .mins , .plus{
+                background-color: $secondColor;
+                color: #f9f9f9;
+                width: 20px;
+                height: 30px;
+                line-height: 30px;
+                text-align:center;
+                cursor: pointer;
+                user-select: none;
+            }
+            .num{
+                margin: 0 10px;
+                font-family: $firstFont;
+                width: 50px;
+                text-align: center;
+            }
+            button{
+                margin: 0 10px;
+                background-color: $mainColor;
+                border: none;
+                outline: none;
+                padding: 8px 20px;
+                color: #f9f9f9;
+                font-family: $firstFont;
+                font-size: 13px;
+                user-select: none;
+            }
+        }
+        .qualities{
+            margin: 50px 0;
+            font-size: 16px;
+            strong{
+                font-weight: 900;
+                width: 100px;
+                display: inline-block;
+                margin: 10px 10px 10px 0;
+            }
+            span{
+                margin:10px 0 10px 10px;
+                i{
+                    margin-right: 10px;
+                    transition: .5s;
+                    color: $secondColor;
+                    &:hover{
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+    }
+}
+/* end vegetables packages */
+
+/* start related products */
+.related-products{
+    margin: 80px 0;
+    .container{
+        >h2{
+            text-transform: uppercase;
+            font-family: $firstFont;
+            line-height: 1.5;
+            font-size: 25px;
+            position: relative;
+            &::after{
+                  content: "";
+                  position: absolute;
+                  width: 80px;
+                  height: 4px;
+                  background-color: $mainColor;
+                  top: 120%;
+                  left: 50%;
+                  transform: translateX(-50%);
+            }
+        }
+    }
+    .products{
+        margin: 50px 0;
+        >div{
+            transition: .5s;
+            transform: scale(1);
+            width: fit-content;
+            height: fit-content;
+        }
+        .close{
+            transform: scale(0);
+            overflow:hidden;
+            height: 0;
+            width: 0%;
+        }
+        >div:hover .food-info{
+             top: 80% !important;
+             opacity: 1;
+             visibility: visible;
+        }
+        .img{
+            margin-top: 30px;
+            img{
+                width: 80%;
+                margin: auto;
+            }
+            .food-info{
+                left: 50%;
+                top: 100%;
+                opacity: 0;
+                visibility: hidden;
+                transform: translateX(-50%);
+                transition:.5s;
+                a{
+                    color: $secondColor;
+                    margin: 0px;
+                    transition: .5s;
+                    height: 30px;
+                    line-height: 30px;
+                    width: 30px;
+                    border-radius: 50%;
+                    display: inline-block;
+                    padding: 0 !important;
+                    &:hover{
+                        background-color: $mainColor;
+                        color: #f9f9f9;
+                    }
+                }
+            }
+        }
+        .food-name{
+            p{
+                margin: 20px 0;
+                font-family: $firstFont;
+                font-style: italic;
+            }
+            span{
+                font-size: 17px;
+                color: #000;
+            }
+        }
+    }
+}
+/* end related products */

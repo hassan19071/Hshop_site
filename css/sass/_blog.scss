@@ -1,0 +1,102 @@
+/* start blogs */
+.blogs{
+    margin: 80px 0;
+    .search-bar{
+        input{
+            width: 100%;
+            border: none;
+            outline: none;
+        }
+        i{
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+    }
+    .category{
+        margin: 50px 0;
+        h3{
+            font-family: $firstFont;
+            font-size:18px;
+        }
+        ul{
+            margin: 20px 0;
+            li{
+                margin: 10px 0;
+                a{
+                    color: #333;
+                    transition: .5s;
+                    &:hover{
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .recent-news{
+        margin: 50px 0;
+        h3{
+            font-family: $firstFont;
+            font-size:18px;
+        }
+        a{
+            margin: 20px 0;
+            img{
+                width:80px;
+            }
+            h5{
+                color: #111;
+                font-size: 18px;
+                font-weight: 900;
+            }
+            p{
+                color: #888;
+                font-size: 14px;
+            }
+
+        }
+    }
+    .search-by{
+        margin: 50px 0;
+        h3{
+            font-family: $firstFont;
+            font-size:18px;
+        }
+        div{
+           margin: 20px 0;
+           a{
+               color: #333;
+               margin: 10px;
+           }
+        }
+    }
+
+    .Blog{
+        margin: 0px 0 40px;
+        .img{
+            img{
+                width: 100%;
+            }
+        }
+        .text{
+            h3{
+                margin: 20px 0;
+                font-size: 16px;
+                font-family: $firstFont;
+                a{
+                    color: $secondColor;
+                }
+            }
+            .date{
+                font-size: 15px;
+                color:#999;
+            }
+            >p{
+                line-height: 1.7rem;
+                color:#222;
+            }
+        }
+    }
+}
+/* end blogs */

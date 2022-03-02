@@ -1,0 +1,10 @@
+@mixin arrow-down($size,$color) {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    border-top: $size solid $color;
+    border-left: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-right: $size solid transparent;
+}

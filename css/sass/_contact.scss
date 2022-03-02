@@ -1,0 +1,60 @@
+/* satrt shop-info */
+.shop-infos{
+    margin: 80px 0;
+    .data{
+        i{
+            font-size: 30px;
+            color: $mainColor;
+        }
+        h3{
+            margin: 20px 0;
+            font-family: $firstFont;
+            font-size: 18px;
+        }
+        p{
+            margin: 0 !important;
+            color: #888;
+        }
+    }
+}
+/* end shop-info */
+
+/* satrt map */
+.map{
+    width: 100%;
+    iframe{
+        width: 100%;
+    }
+}
+/* end map */
+
+/* satrt leave-msg */
+.leave-msg{
+    margin: 80px 0;
+    h2{
+        text-transform: uppercase;
+        font-family: $firstFont;
+        line-height: 1.5;
+        font-size: 25px;
+        position: relative;
+        text-align: center;
+        &::after{
+              content: "";
+              position: absolute;
+              width: 80px;
+              height: 4px;
+              background-color: $mainColor;
+              top: 120%;
+              left: 50%;
+              transform: translateX(-50%);
+        }
+    }
+    form{
+        margin: 50px 0;
+        input , textarea{
+            border: none !important;
+            padding: 8px 10px;
+        }
+    }
+}
+/* end leave-msg */

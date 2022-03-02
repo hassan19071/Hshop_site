@@ -1,0 +1,1637 @@
+body {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+li a.active {
+  color: #6eaa13 !important;
+}
+
+/* start header */
+.header .head-top {
+  background-color: #6eaa13;
+  padding: 10px 0;
+  color: #f9f9f9;
+}
+.header .head-top .shop-info div {
+  margin-right: 25px;
+  font-size: 15px;
+}
+.header .head-top .shop-info div span {
+  margin-left: 5px;
+}
+.header .head-top .settings .social-icons {
+  user-select: none;
+}
+.header .head-top .settings .social-icons a {
+  color: #f9f9f9 !important;
+  font-size: 15px;
+  margin: 0 5px;
+}
+.header .head-top .settings .lang {
+  cursor: pointer;
+  user-select: none;
+  margin: 0 50px;
+  position: relative;
+  padding: 0 15px;
+}
+.header .head-top .settings .lang::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  border-top: 5px solid #f9f9f9;
+  border-left: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+.header .head-top .settings .lang .langs-list {
+  background-color: #252525;
+  z-index: 2;
+  width: 100%;
+  padding: 5px 10px;
+  opacity: 0;
+  top: 50px;
+  visibility: hidden;
+  transition: .5s;
+}
+.header .head-top .settings .lang .langs-list p {
+  margin: 0 !important;
+  font-size: 15px;
+  transition: .5s;
+}
+.header .head-top .settings .lang .langs-list p:hover {
+  color: #6eaa13;
+}
+.header .head-top .settings .lang:hover .langs-list {
+  opacity: 1;
+  visibility: visible;
+  top: 30px;
+}
+.header .head-top .settings .lang img {
+  width: 25px;
+}
+.header .head-top .settings .lang span {
+  font-size: 13px;
+  margin-left: 5px;
+  width: 40px;
+}
+.header .head-top .settings .login a {
+  color: #f9f9f9;
+  font-size: 15px;
+}
+.header .head-top .settings .login a span {
+  margin-left: 5px;
+}
+.header .first-nav {
+  padding: 10px 0;
+}
+.header .first-nav .nav-brand {
+  color: #6eaa13;
+  font-weight: 600;
+  font-size: 30px;
+  font-family: "Mochiy Pop P One", sans-serif;
+  user-select: none;
+  position: relative;
+}
+.header .first-nav .nav-brand img {
+  position: absolute;
+  width: 25px;
+  top: 0;
+  left: 10%;
+}
+.header .first-nav ul li {
+  margin: 0 15px;
+}
+.header .first-nav ul li a {
+  color: #252525;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 14px;
+  transition: .3s;
+}
+.header .first-nav ul li a:hover {
+  color: #6eaa13;
+}
+.header .first-nav ul .pages {
+  position: relative;
+}
+.header .first-nav ul .pages ul {
+  position: absolute;
+  top: 300%;
+  width: 400%;
+  opacity: 0;
+  background-color: #252525;
+  transition: .5s;
+  visibility: hidden;
+  z-index: 2;
+}
+.header .first-nav ul .pages ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+.header .first-nav ul .pages ul li a {
+  color: #f9f9f9;
+  transition: .3s;
+}
+.header .first-nav ul .pages ul li a:hover {
+  color: #6eaa13;
+}
+.header .first-nav ul .pages:hover ul {
+  top: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+.header .first-nav .icons div {
+  position: relative;
+}
+.header .first-nav .icons div:not(:last-of-type) {
+  margin: 0 10px;
+  user-select: none;
+  cursor: pointer;
+}
+.header .first-nav .icons div:last-of-type {
+  font-size: 15px;
+}
+.header .first-nav .icons div:last-of-type strong {
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 12px;
+}
+.header .first-nav .icons div span {
+  font-size: 10px;
+  top: 0;
+  right: -15px;
+  background-color: #6eaa13;
+  color: #f9f9f9;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 15px;
+  height: 15px;
+  width: 15px;
+}
+.header .head-bottom .departs {
+  background-color: #6eaa13;
+  color: #f9f9f9;
+  padding: 6px !important;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  margin-right: 30px !important;
+  user-select: none;
+}
+.header .head-bottom .departs::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  border-top: 7px solid #f9f9f9;
+  border-left: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 7px solid transparent;
+  right: 10px !important;
+}
+.header .head-bottom .departs p {
+  margin-left: 10px !important;
+  font-size: 12px;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+.header .head-bottom .departs .menu {
+  position: absolute;
+  background-color: #f9f9f9;
+  padding: 10px 20px;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  transition: .5s;
+  height: 0px;
+  overflow: hidden;
+  opacity: 0;
+  z-index: 3;
+}
+.header .head-bottom .departs .menu ul {
+  list-style: none;
+}
+.header .head-bottom .departs .menu ul li {
+  margin: 10px 0;
+}
+.header .head-bottom .departs .menu ul li a {
+  color: #252525;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 13px;
+  opacity: .8;
+  transition: .5s;
+}
+.header .head-bottom .departs .menu ul li a:hover {
+  padding-left: 10px;
+  opacity: 1;
+}
+.header .head-bottom .departs .open-menu {
+  height: 360px;
+  opacity: 1;
+}
+.header .head-bottom .search-bar p {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 600;
+  position: relative;
+}
+.header .head-bottom .search-bar p::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  border-top: 6px solid #000;
+  border-left: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-right: 6px solid transparent;
+  right: -40px;
+}
+.header .head-bottom .search-bar .search {
+  width: 400px;
+}
+@media (max-width: 767px) {
+  .header .head-bottom .search-bar .search {
+    width: 100%;
+  }
+}
+.header .head-bottom .search-bar .search input {
+  width: 100%;
+  display: inline-block;
+  padding: 7px 15px;
+  outline: none;
+  border: none;
+  color: #777;
+}
+.header .head-bottom .search-bar .search input::placeholder {
+  color: #888;
+}
+.header .head-bottom .search-bar .search button {
+  right: 0px;
+  padding: 7px 15px;
+  background-color: #6eaa13;
+  border: none;
+  outline: none !important;
+  color: #f9f9f9;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 14px;
+}
+.header .navbar a {
+  color: #6eaa13;
+  font-weight: 600;
+  font-size: 30px;
+  font-family: "Mochiy Pop P One", sans-serif;
+  user-select: none;
+  position: relative;
+}
+.header .navbar a img {
+  position: absolute;
+  width: 25px;
+  top: 0;
+  left: 10%;
+}
+.header .navbar .burger {
+  width: 40px;
+  cursor: pointer;
+}
+.header .navbar .burger span {
+  width: 100%;
+  display: block;
+  height: 2px;
+  background-color: #333;
+  margin: 8px 0;
+}
+.header .close-aside {
+  left: -140% !important;
+}
+.header .aside {
+  transition: left .5s;
+  padding: 50px 40px;
+  width: 60%;
+  bottom: 0 !important;
+  background-color: #f9f9f9;
+  z-index: 100;
+  top: 0 !important;
+  left: 0;
+}
+.header .aside .close {
+  right: 0;
+  font-size: 30px;
+  cursor: pointer;
+}
+.header .aside .nav-brand {
+  color: #6eaa13;
+  font-weight: 600;
+  font-size: 30px;
+  font-family: "Mochiy Pop P One", sans-serif;
+  user-select: none;
+  position: relative;
+}
+.header .aside .nav-brand img {
+  position: absolute;
+  width: 25px;
+  top: 0;
+  left: 10%;
+}
+.header .aside .icons {
+  margin: 20px 0;
+}
+.header .aside .icons div {
+  position: relative;
+}
+.header .aside .icons div:not(:last-of-type) {
+  margin-right: 20px !important;
+  user-select: none;
+  cursor: pointer;
+}
+.header .aside .icons div:last-of-type {
+  font-size: 15px;
+}
+.header .aside .icons div:last-of-type strong {
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 12px;
+}
+.header .aside .icons div span {
+  font-size: 10px;
+  top: 0;
+  right: -15px;
+  background-color: #6eaa13;
+  color: #f9f9f9;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 15px;
+  height: 15px;
+  width: 15px;
+}
+.header .aside .settings {
+  margin: 20px 0;
+}
+.header .aside .settings .lang {
+  cursor: pointer;
+  user-select: none;
+  margin: 0 50px 0 0;
+  position: relative;
+  padding: 0 15px 0 0;
+}
+.header .aside .settings .lang::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  border-top: 5px solid #000;
+  border-left: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+.header .aside .settings .lang .langs-list {
+  background-color: #252525;
+  z-index: 122;
+  width: 100%;
+  padding: 5px 10px;
+  opacity: 0;
+  top: 50px;
+  visibility: hidden;
+  transition: .5s;
+}
+.header .aside .settings .lang .langs-list p {
+  margin: 0 !important;
+  font-size: 15px;
+  transition: .5s;
+  color: #f9f9f9;
+}
+.header .aside .settings .lang .langs-list p:hover {
+  color: #6eaa13;
+}
+.header .aside .settings .lang:hover .langs-list {
+  opacity: 1;
+  visibility: visible;
+  top: 30px;
+}
+.header .aside .settings .lang img {
+  width: 25px;
+}
+.header .aside .settings .lang span {
+  font-size: 13px;
+  margin-left: 5px;
+  width: 40px;
+}
+.header .aside .settings .login a {
+  color: #000;
+  font-size: 15px;
+}
+.header .aside .settings .login a span {
+  margin-left: 5px;
+}
+.header .aside ul {
+  margin: 20px 0;
+}
+.header .aside ul li {
+  margin: 10px 0;
+}
+.header .aside ul li a {
+  color: #252525;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 14px;
+  transition: .4s;
+}
+.header .aside ul li a:hover {
+  color: #6eaa13;
+}
+.header .aside ul .pages {
+  position: relative;
+}
+.header .aside ul .pages ul {
+  position: absolute;
+  top: 300%;
+  width: 80%;
+  opacity: 0;
+  background-color: #252525;
+  transition: .5s;
+  visibility: hidden;
+  z-index: 2;
+}
+.header .aside ul .pages ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+.header .aside ul .pages ul li a {
+  color: #f9f9f9;
+  transition: .3s;
+}
+.header .aside ul .pages ul li a:hover {
+  color: #6eaa13;
+}
+.header .aside ul .pages:hover ul {
+  top: 50%;
+  opacity: 1;
+  visibility: visible;
+}
+.header .aside .social-icons {
+  user-select: none;
+}
+.header .aside .social-icons a {
+  color: #252525 !important;
+  font-size: 15px;
+  margin: 0 10px 0 0;
+}
+.header .aside .msg {
+  margin: 20px 0;
+  font-size: 15px;
+}
+.header .aside .call {
+  font-size: 15px;
+}
+
+/* end header */
+/* start login */
+.close-cont {
+  transform: scale(0);
+}
+
+.cont {
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.3);
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+.cont .close-login {
+  left: 300% !important;
+}
+.cont .login {
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  background-color: #f9f9f9;
+  transform: translateX(-50%) translateY(-50%);
+  transition: left 1s linear;
+}
+.cont .login .close {
+  font-size: 30px;
+  color: #222;
+  top: -10px;
+  right: -10px;
+  cursor: pointer;
+  z-index: 10;
+}
+.cont .login .decore {
+  background-color: #6eaa13;
+  position: relative;
+}
+@media (min-width: 992px) {
+  .cont .login .decore {
+    height: 500px !important;
+    border-radius: 0 50% 50% 0;
+  }
+}
+@media (max-width: 991px) {
+  .cont .login .decore {
+    height: 200px !important;
+    border-radius: 0 0% 50% 50%;
+  }
+  .cont .login .decore img {
+    width: 200px !important;
+    right: 20% !important;
+  }
+}
+.cont .login .decore img {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  bottom: 0;
+  right: -10%;
+}
+.cont .login form {
+  padding: 40px;
+}
+.cont .login form p {
+  text-align: center;
+  font-family: "Mochiy Pop P One", sans-serif;
+  color: #6eaa13;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+.cont .login form .inpu {
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid rgba(114, 113, 113, 0.4);
+  padding: 8px 10px;
+  color: #111;
+  font-size: 17px;
+}
+.cont .login form .sub {
+  background-color: #6eaa13;
+  border: none;
+  padding: 8px 15px;
+  color: #f9f9f9;
+}
+
+/* end login */
+/* start about-us */
+.about-us {
+  background-color: #6eaa13;
+  margin: 10px 0;
+}
+.about-us .about-text {
+  color: #f9f9f9;
+}
+.about-us .about-text h3 {
+  margin: 0 !important;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 2;
+}
+.about-us .about-text h3 span {
+  font-weight: 700;
+}
+.about-us .about-text h2 {
+  text-transform: uppercase;
+  font-family: "Mochiy Pop P One", sans-serif;
+  line-height: 1.5;
+}
+.about-us .about-text p {
+  margin: 20px 0;
+  width: 80%;
+  font-size: 17px;
+}
+.about-us .about-text p span {
+  text-transform: uppercase;
+}
+.about-us .about-text button {
+  background-color: #f9f9f9;
+  color: #555;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  padding: 8px 20px;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+.about-us .about-img img {
+  width: 100%;
+}
+
+/* end about-us */
+/* start some-products */
+.some-products {
+  margin: 50px 0;
+}
+.some-products .owl-carousel .item {
+  margin: 0 40px;
+}
+.some-products .owl-carousel .item img {
+  height: 150px;
+  width: 200px;
+  margin: auto !important;
+}
+.some-products .owl-carousel .item p {
+  font-size: 15px;
+  font-family: "Mochiy Pop P One", sans-serif;
+  margin: 20px 0 0 !important;
+}
+.some-products .owl-nav {
+  margin-top: 50px;
+}
+.some-products .owl-nav .owl-prev, .some-products .owl-nav .owl-next {
+  background-color: #6eaa13 !important;
+  width: 60px;
+  height: 60px;
+  color: #f9f9f9 !important;
+  margin: 20px;
+}
+
+/* end some-products */
+/* start featured products */
+.featured-products {
+  margin: 80px 0;
+}
+.featured-products .container > h2 {
+  text-transform: uppercase;
+  font-family: "Mochiy Pop P One", sans-serif;
+  line-height: 1.5;
+  font-size: 25px;
+  position: relative;
+}
+.featured-products .container > h2::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  background-color: #6eaa13;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.featured-products .types {
+  margin: 50px 0;
+}
+.featured-products .types .active {
+  background-color: #6eaa13 !important;
+  color: #f9f9f9 !important;
+}
+.featured-products .types span {
+  display: inline-block;
+  border: 1px solid #6eaa13;
+  background-color: #f9f9f9;
+  color: #6eaa13;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  margin: 10px 8px;
+  cursor: pointer;
+  user-select: none;
+  transition: .4s;
+}
+.featured-products .types span:hover {
+  background-color: #6eaa13;
+  color: #f9f9f9;
+}
+.featured-products .products {
+  margin: 50px 0;
+}
+.featured-products .products > div {
+  transition: .5s;
+  transform: scale(1);
+  width: fit-content;
+  height: fit-content;
+}
+.featured-products .products .close {
+  transform: scale(0);
+  overflow: hidden;
+  height: 0;
+  width: 0%;
+}
+.featured-products .products > div:hover .food-info {
+  top: 80% !important;
+  opacity: 1;
+  visibility: visible;
+}
+.featured-products .products .img {
+  margin-top: 30px;
+}
+.featured-products .products .img img {
+  width: 80%;
+  margin: auto;
+}
+.featured-products .products .img .food-info {
+  left: 50%;
+  top: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%);
+  transition: .5s;
+}
+.featured-products .products .img .food-info a {
+  color: #252525;
+  margin: 0px;
+  transition: .5s;
+  height: 30px;
+  line-height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 0 !important;
+}
+.featured-products .products .img .food-info a:hover {
+  background-color: #6eaa13;
+  color: #f9f9f9;
+}
+.featured-products .products .food-name p {
+  margin: 20px 0;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-style: italic;
+}
+.featured-products .products .food-name span {
+  font-size: 17px;
+  color: #000;
+}
+
+/* end featured products */
+/* start from the blog */
+.from-blog {
+  margin: 80px 0;
+}
+.from-blog .container > h2 {
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-family: "Mochiy Pop P One", sans-serif;
+  line-height: 1.5;
+  font-size: 25px;
+  position: relative;
+}
+.from-blog .container > h2::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  background-color: #6eaa13;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.from-blog .Blog {
+  margin: 30px 0;
+}
+.from-blog .Blog .img img {
+  width: 100%;
+}
+.from-blog .Blog .text h3 {
+  margin: 20px 0;
+  font-size: 16px;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+.from-blog .Blog .text h3 a {
+  color: #252525;
+}
+.from-blog .Blog .text .date {
+  font-size: 15px;
+  color: #999;
+}
+.from-blog .Blog .text > p {
+  line-height: 1.7rem;
+  color: #222;
+}
+
+/* end from the blog */
+/* strat about shop */
+.about-shop {
+  margin: 20px 0;
+  background-image: url("../images/breadcrumb.jpg");
+  background-size: cover;
+  padding: 50px 0;
+  text-align: center;
+}
+.about-shop h2 {
+  color: #f9f9f9;
+  font-family: "Mochiy Pop P One", sans-serif;
+  text-transform: uppercase;
+}
+
+/* end about shop */
+/* start all products */
+.all-products {
+  margin: 80px 0;
+}
+.all-products .container > h2 {
+  text-transform: uppercase;
+  font-family: "Mochiy Pop P One", sans-serif;
+  line-height: 1.5;
+  font-size: 25px;
+  position: relative;
+}
+.all-products .container > h2::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  background-color: #6eaa13;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.all-products .types {
+  margin: 50px 0;
+}
+.all-products .types .active {
+  background-color: #6eaa13 !important;
+  color: #f9f9f9 !important;
+}
+.all-products .types span {
+  display: inline-block;
+  border: 1px solid #6eaa13;
+  background-color: #f9f9f9;
+  color: #6eaa13;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  margin: 10px 8px;
+  cursor: pointer;
+  user-select: none;
+  transition: .4s;
+}
+.all-products .types span:hover {
+  background-color: #6eaa13;
+  color: #f9f9f9;
+}
+.all-products .close-products {
+  height: 0 !important;
+  visibility: hidden;
+  overflow: hidden;
+  transform: scale(0) !important;
+}
+.all-products .products {
+  overflow: hidden;
+  transform: scale(1);
+  margin: 50px 0;
+  visibility: visible;
+  transition: .7s;
+}
+.all-products .products > div:hover .food-info {
+  top: 80% !important;
+  opacity: 1;
+  visibility: visible;
+}
+.all-products .products .img {
+  margin-top: 30px;
+}
+.all-products .products .img img {
+  width: 80%;
+  margin: auto;
+}
+.all-products .products .img .food-info {
+  left: 50%;
+  top: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%);
+  transition: .5s;
+}
+.all-products .products .img .food-info a {
+  color: #252525;
+  margin: 0px;
+  transition: .5s;
+  height: 30px;
+  line-height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 0 !important;
+}
+.all-products .products .img .food-info a:hover {
+  background-color: #6eaa13;
+  color: #f9f9f9;
+}
+.all-products .products .food-name p {
+  margin: 20px 0;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-style: italic;
+}
+.all-products .products .food-name span {
+  font-size: 17px;
+  color: #000;
+}
+.all-products .bullets {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.all-products .bullets li {
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  border: 1px solid #6eaa13;
+  color: #6eaa13;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 15px;
+  user-select: none;
+  transition: .4s;
+}
+.all-products .bullets li:hover {
+  background-color: #6eaa13;
+  color: #f9f9f9;
+}
+.all-products .bullets li.active {
+  background-color: #6eaa13;
+  color: #f9f9f9;
+}
+
+/* end  all products */
+/* start discount */
+.discount {
+  margin: 80px 0;
+}
+.discount h2 {
+  text-transform: uppercase;
+  font-family: "Mochiy Pop P One", sans-serif;
+  line-height: 1.5;
+  font-size: 25px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.discount h2::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  background-color: #6eaa13;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.discount .dis .discount-number {
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  z-index: 20;
+  background-color: #6eaa13;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #f9f9f9;
+  border-radius: 50%;
+  font-size: 15px;
+}
+.discount .dis img {
+  width: 80%;
+  margin: auto;
+}
+.discount .dis:hover .food-info {
+  top: 80% !important;
+  opacity: 1;
+  visibility: visible;
+}
+.discount .dis .food-info {
+  left: 50%;
+  top: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%);
+  transition: .5s;
+}
+.discount .dis .food-info a {
+  color: #252525;
+  margin: 0px;
+  transition: .5s;
+  height: 30px;
+  line-height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 0 !important;
+}
+.discount .dis .food-info a:hover {
+  background-color: #6eaa13;
+  color: #f9f9f9;
+}
+.discount .dis .food-name p {
+  margin: 20px 0;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-style: italic;
+}
+.discount .dis .food-name span {
+  font-size: 17px;
+  color: #000;
+  text-decoration: line-through;
+}
+.discount .dis .food-name span.after-discount {
+  text-decoration: none !important;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 14px;
+}
+.discount .owl-nav {
+  margin-top: 50px !important;
+}
+.discount .owl-nav .owl-prev, .discount .owl-nav .owl-next {
+  background-color: #6eaa13 !important;
+  width: 60px;
+  height: 60px;
+  color: #f9f9f9 !important;
+  margin: 20px;
+}
+
+/* end discount */
+/* start vegetables packages */
+.vegetables-packages {
+  margin: 80px 0;
+}
+.vegetables-packages .imgs .main-img {
+  height: 400px;
+}
+.vegetables-packages .imgs .main-img img {
+  width: 80%;
+  margin: auto;
+}
+.vegetables-packages .imgs .products-options .owl-nav {
+  margin-top: 20px !important;
+}
+.vegetables-packages .imgs .products-options .owl-nav .owl-prev, .vegetables-packages .imgs .products-options .owl-nav .owl-next {
+  background-color: #6eaa13 !important;
+  width: 20px;
+  height: 20px;
+  color: #f9f9f9 !important;
+  margin: 20px;
+  line-height: 20px;
+  outline: none;
+  border: none;
+}
+.vegetables-packages .your-choose h3 {
+  font-size: 20px;
+  font-weight: 900;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+.vegetables-packages .your-choose .rate {
+  margin: 20px 0;
+}
+.vegetables-packages .your-choose .rate i {
+  color: #6eaa13;
+}
+.vegetables-packages .your-choose .rate span {
+  margin-left: 10px;
+  font-weight: 600;
+}
+.vegetables-packages .your-choose h4 {
+  font-size: 20px;
+  font-family: "Mochiy Pop P One", sans-serif;
+  color: #6eaa13;
+}
+.vegetables-packages .your-choose p {
+  margin: 20px 0;
+}
+.vegetables-packages .your-choose .cart .mins, .vegetables-packages .your-choose .cart .plus {
+  background-color: #252525;
+  color: #f9f9f9;
+  width: 20px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+.vegetables-packages .your-choose .cart .num {
+  margin: 0 10px;
+  font-family: "Mochiy Pop P One", sans-serif;
+  width: 50px;
+  text-align: center;
+}
+.vegetables-packages .your-choose .cart button {
+  margin: 0 10px;
+  background-color: #6eaa13;
+  border: none;
+  outline: none;
+  padding: 8px 20px;
+  color: #f9f9f9;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 13px;
+  user-select: none;
+}
+.vegetables-packages .your-choose .qualities {
+  margin: 50px 0;
+  font-size: 16px;
+}
+.vegetables-packages .your-choose .qualities strong {
+  font-weight: 900;
+  width: 100px;
+  display: inline-block;
+  margin: 10px 10px 10px 0;
+}
+.vegetables-packages .your-choose .qualities span {
+  margin: 10px 0 10px 10px;
+}
+.vegetables-packages .your-choose .qualities span i {
+  margin-right: 10px;
+  transition: .5s;
+  color: #252525;
+}
+.vegetables-packages .your-choose .qualities span i:hover {
+  color: #6eaa13;
+}
+
+/* end vegetables packages */
+/* start related products */
+.related-products {
+  margin: 80px 0;
+}
+.related-products .container > h2 {
+  text-transform: uppercase;
+  font-family: "Mochiy Pop P One", sans-serif;
+  line-height: 1.5;
+  font-size: 25px;
+  position: relative;
+}
+.related-products .container > h2::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  background-color: #6eaa13;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.related-products .products {
+  margin: 50px 0;
+}
+.related-products .products > div {
+  transition: .5s;
+  transform: scale(1);
+  width: fit-content;
+  height: fit-content;
+}
+.related-products .products .close {
+  transform: scale(0);
+  overflow: hidden;
+  height: 0;
+  width: 0%;
+}
+.related-products .products > div:hover .food-info {
+  top: 80% !important;
+  opacity: 1;
+  visibility: visible;
+}
+.related-products .products .img {
+  margin-top: 30px;
+}
+.related-products .products .img img {
+  width: 80%;
+  margin: auto;
+}
+.related-products .products .img .food-info {
+  left: 50%;
+  top: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%);
+  transition: .5s;
+}
+.related-products .products .img .food-info a {
+  color: #252525;
+  margin: 0px;
+  transition: .5s;
+  height: 30px;
+  line-height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 0 !important;
+}
+.related-products .products .img .food-info a:hover {
+  background-color: #6eaa13;
+  color: #f9f9f9;
+}
+.related-products .products .food-name p {
+  margin: 20px 0;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-style: italic;
+}
+.related-products .products .food-name span {
+  font-size: 17px;
+  color: #000;
+}
+
+/* end related products */
+/* start what we bought */
+.what-you-bought {
+  margin: 80px 0;
+}
+.what-you-bought table img {
+  width: 100px;
+}
+.what-you-bought table .hah {
+  padding: 100px 0;
+}
+.what-you-bought table tr {
+  height: 80px;
+  border-width: 10px;
+}
+.what-you-bought table tr .total, .what-you-bought table tr .price {
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 13px;
+  width: 100px;
+}
+.what-you-bought table tr.titles {
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+.what-you-bought table tr td {
+  line-height: 80px;
+}
+.what-you-bought table tr td:last-of-type {
+  text-align: end;
+}
+.what-you-bought table tr td:last-of-type .close {
+  cursor: pointer;
+  font-weight: 900;
+  user-select: none;
+}
+.what-you-bought table tr .mins, .what-you-bought table tr .plus {
+  width: 30px;
+  height: 30px;
+  background-color: #6eaa13;
+  text-align: center;
+  line-height: 30px;
+  color: #f9f9f9;
+  cursor: pointer;
+  user-select: none;
+}
+.what-you-bought table tr .num {
+  width: 50px;
+  font-family: "Mochiy Pop P One", sans-serif;
+  text-align: center;
+}
+
+/* end what we bought */
+/* start update */
+.update-shoping {
+  margin: 50px 0;
+}
+.update-shoping .update a::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 2px dotted #888;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  transform: translateY(-50%);
+  border-right: none;
+}
+.update-shoping a {
+  font-family: "Mochiy Pop P One", sans-serif;
+  color: #888;
+  font-size: 12px;
+  position: relative;
+}
+
+/* end update */
+/* satrt code-cart */
+.code-cart {
+  margin: 50px 0;
+}
+.code-cart h3 {
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+.code-cart a {
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 13px;
+}
+.code-cart .code input {
+  padding: 8px 10px;
+  width: 60%;
+  border: none;
+  outline: none;
+}
+.code-cart .code a {
+  border-color: #252525;
+  background-color: #252525;
+  color: #f9f9f9;
+  padding: 10px 30px;
+}
+.code-cart .cart-total h4 {
+  font-size: 17px;
+  font-weight: 900;
+}
+.code-cart .cart-total p {
+  color: rgba(228, 8, 8, 0.582);
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+.code-cart .cart-total a {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #6eaa13;
+  color: #f9f9f9;
+  margin: 30px 0;
+}
+
+/* end code-cart */
+/* satrt billing */
+.billing {
+  margin: 80px 0 0;
+}
+.billing h3 {
+  font-family: "Mochiy Pop P One", sans-serif;
+  margin: 20px 0;
+  font-size: 20px;
+}
+.billing .form input {
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 13px;
+  color: #555353;
+}
+.billing .form input::placeholder {
+  color: #8f8f8f;
+}
+.billing .form label {
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 13px;
+  color: #424040;
+}
+.billing .form .form-check p {
+  margin: 10px 0;
+  color: #555;
+}
+.billing .form .order-btn {
+  width: 100%;
+  background-color: #6eaa13;
+  border: 2px solid #6eaa13;
+  color: #f9f9f9;
+  margin: 20px 0;
+}
+.billing .order-info {
+  margin: 50px auto;
+}
+.billing .order-info p strong {
+  font-weight: 800;
+}
+
+/* end billing */
+/* start blogs */
+.blogs {
+  margin: 80px 0;
+}
+.blogs .search-bar input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+.blogs .search-bar i {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.blogs .category {
+  margin: 50px 0;
+}
+.blogs .category h3 {
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 18px;
+}
+.blogs .category ul {
+  margin: 20px 0;
+}
+.blogs .category ul li {
+  margin: 10px 0;
+}
+.blogs .category ul li a {
+  color: #333;
+  transition: .5s;
+}
+.blogs .category ul li a:hover {
+  padding-left: 10px;
+}
+.blogs .recent-news {
+  margin: 50px 0;
+}
+.blogs .recent-news h3 {
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 18px;
+}
+.blogs .recent-news a {
+  margin: 20px 0;
+}
+.blogs .recent-news a img {
+  width: 80px;
+}
+.blogs .recent-news a h5 {
+  color: #111;
+  font-size: 18px;
+  font-weight: 900;
+}
+.blogs .recent-news a p {
+  color: #888;
+  font-size: 14px;
+}
+.blogs .search-by {
+  margin: 50px 0;
+}
+.blogs .search-by h3 {
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 18px;
+}
+.blogs .search-by div {
+  margin: 20px 0;
+}
+.blogs .search-by div a {
+  color: #333;
+  margin: 10px;
+}
+.blogs .Blog {
+  margin: 0px 0 40px;
+}
+.blogs .Blog .img img {
+  width: 100%;
+}
+.blogs .Blog .text h3 {
+  margin: 20px 0;
+  font-size: 16px;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+.blogs .Blog .text h3 a {
+  color: #252525;
+}
+.blogs .Blog .text .date {
+  font-size: 15px;
+  color: #999;
+}
+.blogs .Blog .text > p {
+  line-height: 1.7rem;
+  color: #222;
+}
+
+/* end blogs */
+/* satrt shop-info */
+.shop-infos {
+  margin: 80px 0;
+}
+.shop-infos .data i {
+  font-size: 30px;
+  color: #6eaa13;
+}
+.shop-infos .data h3 {
+  margin: 20px 0;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 18px;
+}
+.shop-infos .data p {
+  margin: 0 !important;
+  color: #888;
+}
+
+/* end shop-info */
+/* satrt map */
+.map {
+  width: 100%;
+}
+.map iframe {
+  width: 100%;
+}
+
+/* end map */
+/* satrt leave-msg */
+.leave-msg {
+  margin: 80px 0;
+}
+.leave-msg h2 {
+  text-transform: uppercase;
+  font-family: "Mochiy Pop P One", sans-serif;
+  line-height: 1.5;
+  font-size: 25px;
+  position: relative;
+  text-align: center;
+}
+.leave-msg h2::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  background-color: #6eaa13;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.leave-msg form {
+  margin: 50px 0;
+}
+.leave-msg form input, .leave-msg form textarea {
+  border: none !important;
+  padding: 8px 10px;
+}
+
+/* end leave-msg */
+/* start footer */
+.footer {
+  background-color: #6eaa13;
+}
+.footer .data-foot {
+  padding: 50px 0 !important;
+}
+.footer .data-foot .title a {
+  color: #f9f9f9 !important;
+  font-weight: 600;
+  font-size: 30px;
+  font-family: "Mochiy Pop P One", sans-serif;
+  user-select: none;
+  position: relative;
+}
+.footer .data-foot .title a img {
+  position: absolute;
+  width: 25px;
+  top: -8px;
+  left: 10%;
+}
+.footer .data-foot .title ul {
+  margin: 20px 0 !important;
+}
+.footer .data-foot .title ul li {
+  margin: 10px 0;
+  font-size: 15px;
+  color: #f9f9f9;
+}
+.footer .data-foot .title ul li span {
+  margin-left: 8px;
+}
+.footer .data-foot .links {
+  color: #f9f9f9;
+}
+.footer .data-foot .links h3 {
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 22px;
+}
+.footer .data-foot .links ul {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0 !important;
+}
+.footer .data-foot .links ul li {
+  margin: 10px 0;
+}
+.footer .data-foot .links ul li a {
+  color: #f9f9f9;
+  text-decoration: none;
+  font-size: 15px;
+  transition: .4s;
+}
+.footer .data-foot .links ul li a:hover {
+  padding-left: 10px;
+}
+.footer .data-foot .subscribe {
+  color: #f9f9f9;
+}
+.footer .data-foot .subscribe h3 {
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 22px;
+}
+.footer .data-foot .subscribe form {
+  margin: 20px 0;
+  position: relative;
+}
+.footer .data-foot .subscribe form input {
+  width: 100%;
+  padding: 8px 10px;
+  border: none;
+  outline: none;
+}
+.footer .data-foot .subscribe form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #252525;
+  color: #f9f9f9;
+  padding: 8px 10px;
+  border: none;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 16px;
+}
+.footer .data-foot .social-icons {
+  margin: 20px 0;
+}
+.footer .data-foot .social-icons a {
+  color: #f9f9f9;
+  transition: .5s;
+}
+.footer .data-foot .social-icons a:not(:first-of-type) {
+  margin-left: 10px;
+}
+.footer .data-foot .social-icons a:hover {
+  color: #252525;
+}
+.footer .foot {
+  color: #f9f9f9;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+/* end footer */
+
+/*# sourceMappingURL=style.css.map */

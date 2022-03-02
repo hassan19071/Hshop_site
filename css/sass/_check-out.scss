@@ -1,0 +1,46 @@
+/* satrt billing */
+.billing{
+    margin: 80px 0 0; 
+    h3{
+        font-family: $firstFont;
+        margin: 20px 0;
+        font-size: 20px;
+    }
+    .form{
+        input{
+            font-family: $firstFont;
+            font-size: 13px;
+            color: rgb(85, 83, 83);
+            &::placeholder{
+                color: rgb(143, 143, 143);
+            }
+        }
+        label{
+            font-family: $firstFont;
+            font-size: 13px;
+            color: rgb(66, 64, 64);
+        }
+        .form-check{
+            p{
+                margin: 10px 0;
+                color:#555;
+            }
+        }
+        .order-btn{
+            width: 100%;
+            background-color: $mainColor;
+            border: 2px solid $mainColor;
+            color: #f9f9f9;
+            margin: 20px 0;
+        }
+    }
+    .order-info{
+        margin: 50px auto;
+        p{
+            strong{
+                font-weight: 800;
+            }
+        }
+    }
+}
+/* end billing */

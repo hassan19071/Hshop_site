@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hshop</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="fonts/MochiyPopPOne-Regular.ttf" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Zen+Kaku+Gothic+Antique:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--start header-->
+    <div class="header">
+      <div class="head-top d-none d-lg-block">
+        <div class="container">
+          <div class="row p-0 m-0 align-items-center">
+            <div class="col p-0 shop-info d-flex align-items-center">
+              <div>
+                <i class="fa fa-envelope"></i>
+                <span>Hello@gmail.com</span>
+              </div>
+              <div>
+                <i class="fa fa-phone"></i>
+                <span>+01152205570</span>
+              </div>
+            </div>
+            <div
+              class="
+                col
+                p-0
+                d-flex
+                align-items-center
+                settings
+                justify-content-end
+              "
+            >
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+              <div class="lang position-relative">
+                <img src="images/language.png" alt="" />
+                <span class="lang-type">En</span>
+                <div class="langs-list position-absolute">
+                  <p data-lang="En">english</p>
+                  <p data-lang="Ar">arabic</p>
+                </div>
+              </div>
+              <div class="login">
+                <a href="#"><i class="fa fa-user"></i> <span>Login</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--start navbar-->
+      <div class="first-nav d-lg-block d-none">
+        <div
+          class="container d-flex align-items-center justify-content-between"
+        >
+          <a href="#" class="nav-brand"
+            >Hshop <img src="images/logo-leaves.png" alt=""
+          /></a>
+          <ul class="d-flex align-items-center list-unstyled m-0">
+            <li>
+              <a
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="shop.html"
+                >Shope</a
+              >
+            </li>
+            <li class="pages">
+              <a href="#">Pages</a>
+              <ul>
+                <li>
+                  <a
+                    href="shop-details.html"
+                    >Shop Details</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="shoping-cart.html"
+                    >Shoping Cart</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="checkout.html"
+                    >Check Out</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href="blog.html"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="active"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="icons d-flex align-items-center">
+            <div class="position-relative me-3">
+              <i class="fa fa-heart"></i>
+              <span class="position-absolute">4</span>
+            </div>
+            <div class="position-relative">
+              <i class="fa fa-shopping-bag"></i>
+              <span class="position-absolute">5</span>
+            </div>
+            <div class="item ms-4">
+              <p class="m-0">item: <strong>$120.00</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar">
+        <div
+          class="
+            container
+            d-flex d-lg-none
+            align-items-center
+            justify-content-between
+          "
+        >
+          <a href="#" class="nav-brand"
+            >Hshop <img src="images/logo-leaves.png" alt=""
+          /></a>
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <!--end navbar-->
+
+      <!--start aside bar-->
+      <div class="aside position-fixed d-lg-none close-aside">
+        <div class="aside-menu position-relative">
+          <i class="fas fa-times position-absolute close"></i>
+          <a href="#" class="nav-brand"
+            >Hshop <img src="images/logo-leaves.png" alt=""
+          /></a>
+          <div class="icons d-flex align-items-center">
+            <div class="position-relative me-3">
+              <i class="fa fa-heart"></i>
+              <span class="position-absolute">4</span>
+            </div>
+            <div class="position-relative">
+              <i class="fa fa-shopping-bag"></i>
+              <span class="position-absolute">5</span>
+            </div>
+            <div class="item ms-4">
+              <p class="m-0">item: <strong>$120.00</strong></p>
+            </div>
+          </div>
+          <div class="d-flex align-items-center settings">
+            <div class="lang position-relative">
+              <img src="images/language.png" alt="" />
+              <span class="lang-type">En</span>
+              <div class="langs-list position-absolute">
+                <p data-lang="En">english</p>
+                <p data-lang="Ar">arabic</p>
+              </div>
+            </div>
+            <div class="login">
+              <a href="#"><i class="fa fa-user"></i> <span>Login</span></a>
+            </div>
+          </div>
+
+          <ul class="m-0 list-unstyled">
+            <li>
+              <a
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="shope.html"
+                >Shope</a
+              >
+            </li>
+            <li class="pages">
+              <a href="#">Pages</a>
+              <ul>
+                <li>
+                  <a
+                    href="shop-details.html"
+                    >Shop Details</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="shoping-cart.html"
+                    >Shoping Cart</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="checkout.html"
+                    >Check Out</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href="blog.html"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="active"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+
+          <div class="msg">
+            <i class="fa fa-envelope"></i>
+            <span>Hello@gmail.com</span>
+          </div>
+          <div class="call">
+            <i class="fa fa-phone"></i>
+            <span>+01152205570</span>
+          </div>
+        </div>
+      </div>
+      <!--end aside bar-->
+
+      <!--start head-bottom-->
+      <div class="head-bottom">
+        <div class="container">
+          <div class="row p-0 m-0">
+            <div class="col-12 col-lg-3 departs p-0 d-flex align-items-center">
+              <i class="fa fa-bars"></i>
+              <p class="m-0">All departments</p>
+              <div class="menu">
+                <ul>
+                  <li><a href="#">Fresh Meat</a></li>
+                  <li><a href="#">Vegetables</a></li>
+                  <li><a href="#">Fruits & Nut Gifts</a></li>
+                  <li><a href="#">Ocean Foods</a></li>
+                  <li><a href="#">Butter & Eggs</a></li>
+                  <li><a href="#">Fresh Onion</a></li>
+                  <li><a href="#">Fastfood</a></li>
+                  <li><a href="#">Fresh Meat</a></li>
+                  <li><a href="#">Fresh Berries</a></li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="
+                col
+                search-bar
+                col-lg
+                p-0
+                d-flex
+                align-items-center
+                justify-content-between
+                mt-4 mt-lg-0
+              "
+            >
+              <p class="m-0 d-none d-md-block">All Categories</p>
+              <div class="search position-relative">
+                <input type="text" placeholder="What do you need" />
+                <button class="position-absolute">Search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end head bottom-->
+    </div>
+    <!--end header-->
+
+    <!--start login-->
+    <div class="cont position-fixed close-cont">
+      <div class="login close-login">
+        <i class="fas fa-times position-absolute close"></i>
+        <div class="row m-0 p-0 align-items-center">
+          <div class="col-lg-5 p-0 decore">
+            <img src="images/login-img.png" alt="" />
+          </div>
+          <div class="col-lg p-0">
+            <form action="">
+              <p>Login</p>
+              <input type="text" placeholder="username" class="d-block inpu" />
+              <input
+                type="password"
+                placeholder="password"
+                class="d-block inpu"
+              />
+              <div class="d-flex align-items-center justify-content-between">
+                <div><input type="checkbox" /> <span>Remember me</span></div>
+                <input type="submit" class="sub" />
+              </div>
+              <a href="#">forgot your password?</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end login-->
+
+    <!--start about-shop-->
+    <div class="about-shop">
+      <div class="container">
+        <h2>Contact Us</h2>
+      </div>
+    </div>
+    <!-- end about-shop -->
+
+    <!--start shop-info -->
+    <div class="shop-infos">
+      <div class="container text-center">
+        <div class="row m-0 data justify-content-between">
+          <div class="col-lg col-sm-6 mt-0">
+            <i class="fa fa-phone"></i>
+            <h3>Phone</h3>
+            <p>+01152205570</p>
+          </div>
+          <div class="col-lg col-sm-6 mt-5 mt-sm-0">
+            <i class="fa fa-clock"></i>
+            <h3>Open Time</h3>
+            <p>10:00 am to 23:00 pm</p>
+          </div>
+          <div class="col-lg col-sm-6 mt-5 mt-lg-0">
+            <i class="fa fa-map-marker-alt"></i>
+            <h3>Address</h3>
+            <p>60-49 Road 11378 Cairo</p>
+          </div>
+          <div class="col-lg col-sm-6 mt-lg-0 mt-5">
+            <i class="fa fa-envelope"></i>
+            <h3>Email</h3>
+            <p>Hello@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end shop-info-->
+
+    <!--start map -->
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49116.39176087041!2d-86.41867791216099!3d39.69977417971648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886ca48c841038a1%3A0x70cfba96bf847f0!2sPlainfield%2C%20IN%2C%20USA!5e0!3m2!1sen!2sbd!4v1586106673811!5m2!1sen!2sbd"
+        height="500"
+        style="border: 0"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+      <div class="map-inside">
+        <i class="icon_pin"></i>
+      </div>
+    </div>
+    <!--end map-->
+
+    <!--start leave-msg-->
+    <div class="leave-msg">
+      <div class="container">
+        <h2>Leave a message</h2>
+        <form action="#" class="row">
+          <input type="text" class="col-md me-md-4" placeholder="Your name" />
+          <input
+            type="email"
+            class="col-md mt-4 mb-4 mt-md-0 mb-md-0"
+            placeholder="Your email"
+          />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="4"
+            class="col-12 mt-md-4"
+            placeholder="Your message"
+          ></textarea>
+        </form>
+      </div>
+    </div>
+    <!--end leave msg-->
+
+    <!--start footer-->
+    <div class="footer">
+      <div class="container">
+        <div class="row m-0 data-foot">
+          <div class="col-md p-0 title">
+            <a href="#">Hshop <img src="images/logo-leaves.png" alt="" /></a>
+            <div class="shop-info">
+              <ul class="list-unstyled">
+                <li>
+                  <i class="fa fa-envelope"></i>
+                  <span>Hello@gmail.com</span>
+                </li>
+                <li>
+                  <i class="fa fa-phone"></i>
+                  <span>+01152205570</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md p-0 links mt-3 mt-md-0">
+            <h3>Our Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md p-0 subscribe mt-3 mt-md-0">
+            <h3>Newsletter</h3>
+            <form action="">
+              <input type="email" placeholder="Enter your email" />
+              <button>Subscribe</button>
+            </form>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="foot text-center">
+          Copyright ©2021 All rights reserved to Hassan
+        </div>
+      </div>
+    </div>
+    <!--end footer-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/poper.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

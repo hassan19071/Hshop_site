@@ -1,0 +1,252 @@
+/* strat about shop */
+.about-shop {
+    margin: 20px 0;
+    background-image: url("../images/breadcrumb.jpg");
+    background-size: cover;
+    padding: 50px 0;
+    text-align: center;
+    h2{
+        color: #f9f9f9;
+        font-family: $firstFont;
+        text-transform: uppercase;
+    }
+}
+/* end about shop */
+
+/* start all products */
+.all-products{
+    margin: 80px 0;
+    .container{
+        >h2{
+            text-transform: uppercase;
+            font-family: $firstFont;
+            line-height: 1.5;
+            font-size: 25px;
+            position: relative;
+            &::after{
+                  content: "";
+                  position: absolute;
+                  width: 80px;
+                  height: 4px;
+                  background-color: $mainColor;
+                  top: 120%;
+                  left: 50%;
+                  transform: translateX(-50%);
+            }
+        }
+    }
+    .types{
+        margin: 50px 0;
+        .active{
+            background-color: $mainColor !important;
+            color: #f9f9f9 !important;
+        }
+        span{
+            display: inline-block;
+            border: 1px solid $mainColor;
+            background-color: #f9f9f9;
+            color: $mainColor;
+            font-family: $firstFont;
+            font-size: 14px;
+            padding: 10px;
+            margin:10px 8px;
+            cursor: pointer;
+            user-select: none;
+            transition: .4s;
+            &:hover{
+                background-color: $mainColor;
+                color: #f9f9f9;
+            }
+        }
+    }
+    .close-products{
+        height: 0 !important;
+        visibility: hidden;
+        overflow: hidden;
+        transform: scale(0) !important;
+    }
+    .products{
+        overflow: hidden;
+        transform: scale(1);
+        margin: 50px 0;
+        visibility: visible;
+        transition:.7s;
+        >div:hover .food-info{
+             top: 80% !important;
+             opacity: 1;
+             visibility: visible;
+        }
+        .img{
+            margin-top: 30px;
+            img{
+                width: 80%;
+                margin: auto;
+            }
+            .food-info{
+                left: 50%;
+                top: 100%;
+                opacity: 0;
+                visibility: hidden;
+                transform: translateX(-50%);
+                transition:.5s;
+                a{
+                    color: $secondColor;
+                    margin: 0px;
+                    transition: .5s;
+                    height: 30px;
+                    line-height: 30px;
+                    width: 30px;
+                    border-radius: 50%;
+                    display: inline-block;
+                    padding: 0 !important;
+                    &:hover{
+                        background-color: $mainColor;
+                        color: #f9f9f9;
+                    }
+                }
+            }
+        }
+        .food-name{
+            p{
+                margin: 20px 0;
+                font-family: $firstFont;
+                font-style: italic;
+            }
+            span{
+                font-size: 17px;
+                color: #000;
+            }
+        }
+    }
+    .bullets{
+        margin: 50px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+ 
+        li{
+            width: 25px;
+            height: 25px;
+            text-align: center;
+            line-height: 25px;
+            border: 1px solid $mainColor;
+            color: $mainColor;
+            margin: 0 5px;
+            cursor:pointer;
+            font-size: 15px;
+            user-select: none;
+            transition: .4s;
+            &:hover{
+                background-color: $mainColor;
+                color: #f9f9f9;
+            }
+            &.active{
+                background-color: $mainColor;
+                color: #f9f9f9;
+            }
+        }
+        
+    }
+}
+/* end  all products */
+
+/* start discount */
+.discount{
+    margin: 80px 0;
+    h2{
+        text-transform: uppercase;
+        font-family: $firstFont;
+        line-height: 1.5;
+        font-size: 25px;
+        position: relative;
+        margin-bottom:20px;
+        &::after{
+              content: "";
+              position: absolute;
+              width: 80px;
+              height: 4px;
+              background-color: $mainColor;
+              top: 120%;
+              left: 50%;
+              transform: translateX(-50%);
+        }
+    }
+    .dis{
+        .discount-number{
+            position: absolute;
+            top: 50px;
+            left: 40px;
+            z-index: 20;
+            background-color: $mainColor;
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            line-height: 40px;
+            color: #f9f9f9;
+            border-radius: 50%;
+           
+            font-size: 15px;
+        }
+        img{
+            width: 80%;
+            margin: auto;
+        }
+        &:hover .food-info{
+            top: 80% !important;
+            opacity: 1;
+            visibility: visible;
+       }
+        .food-info{
+            left: 50%;
+            top: 100%;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateX(-50%);
+            transition:.5s;
+            a{
+                color: $secondColor;
+                margin: 0px;
+                transition: .5s;
+                height: 30px;
+                line-height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                display: inline-block;
+                padding: 0 !important;
+                &:hover{
+                    background-color: $mainColor;
+                    color: #f9f9f9;
+                }
+            }
+        }
+        .food-name{
+            p{
+                margin: 20px 0;
+                font-family: $firstFont;
+                font-style: italic;
+            }
+            span{
+                font-size: 17px;
+                color: #000;
+                text-decoration: line-through;
+                &.after-discount{
+                    text-decoration: none !important;
+                    font-family: $firstFont;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .owl-nav{
+    
+        margin-top: 50px !important;
+        .owl-prev , .owl-next{
+            background-color: $mainColor !important;
+            width: 60px;
+            height: 60px;
+            color: #f9f9f9 !important;
+            margin: 20px;
+        }
+    }
+}
+/* end discount */

@@ -1,0 +1,126 @@
+/* start what we bought */
+.what-you-bought{
+    margin: 80px 0;
+    table{
+        img{
+            width: 100px;
+        }
+        .hah{
+            padding: 100px 0;
+        }
+        tr{
+            height:80px;
+            
+            border-width: 10px;
+            .total , .price{
+                font-family:$firstFont;
+                font-size: 13px;
+                width:100px;
+            }
+            &.titles{
+                font-family: $firstFont;
+            }
+            td{
+                line-height: 80px;
+            }
+            td:last-of-type{
+               text-align: end;
+               .close{
+                   cursor: pointer;
+                   font-weight: 900;
+                   user-select:none;
+               } 
+            }
+            .mins , .plus{
+                width: 30px;
+                height: 30px;
+                background-color: $mainColor;
+                text-align: center;
+                line-height: 30px;
+                color: #f9f9f9;
+                cursor: pointer;
+                user-select: none;
+            }
+            .num{
+                width: 50px;
+                font-family: $firstFont;
+                text-align:center;
+            }
+        }
+    }
+}
+/* end what we bought */
+
+/* start update */
+.update-shoping{
+    margin:50px 0;
+    .update{
+    
+        a::before{
+            content: "";
+            width: 20px;
+            height: 20px;
+            border: 2px dotted #888;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left:-30px;
+            transform: translateY(-50%);
+            border-right: none;
+        }
+    }
+    a{
+        font-family: $firstFont;
+        color: #888;
+        font-size: 12px;
+        position: relative;
+    }
+}
+/* end update */
+
+/* satrt code-cart */
+.code-cart{
+    margin: 50px 0;
+    h3{
+        font-family: $firstFont;
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+    a{
+        font-family: $firstFont;
+        font-size: 13px;
+    }
+    .code{
+        input{
+            padding:8px 10px;
+            width:60%;
+            border: none;
+            outline: none;
+        }
+        a{
+            border-color: $secondColor;
+            background-color: $secondColor;
+            color: #f9f9f9;
+            padding: 10px 30px;
+        }
+    }
+    .cart-total{
+        h4{
+            font-size: 17px;
+            font-weight: 900;
+        }
+        p{
+            color: rgba(228, 8, 8, 0.582);
+            font-family:$firstFont;
+        }
+        a{
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            background-color: $mainColor;
+            color:#f9f9f9;
+            margin: 30px 0;
+        }
+    }
+}
+/* end code-cart */

@@ -1,0 +1,106 @@
+/* start footer */
+.footer{
+    background-color: $mainColor;
+    .data-foot{
+        padding: 50px 0 !important;
+        .title{
+            a{
+                color: #f9f9f9 !important;
+                font-weight: 600;
+                font-size: 30px;
+                font-family: $firstFont;
+                user-select:none;
+                position: relative;
+                img{
+                    position: absolute;
+                    width: 25px;
+                    top: -8px;
+                    left: 10%;
+                }
+            }
+            ul{
+                margin: 20px 0 !important;
+                li{
+                    margin: 10px 0;
+                    font-size: 15px;
+                    color: #f9f9f9;
+                    span{
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+        .links{
+            color: #f9f9f9;
+            h3{
+                font-family: $firstFont;
+                font-size: 22px;
+            }
+            ul{
+                list-style: none;
+                margin: 20px 0;
+                padding:0 !important;
+                li{
+                    margin: 10px 0;
+                    a{
+                        color: #f9f9f9;
+                        text-decoration: none;
+                        font-size: 15px;
+                        transition: .4s;
+                        &:hover{
+                            padding-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .subscribe{
+            color: #f9f9f9;
+            h3{
+                font-family: $firstFont;
+                font-size: 22px;
+            }
+            form{
+                margin: 20px 0;
+                position: relative;
+                input{
+                    width: 100%;
+                    padding: 8px 10px;
+                    border: none;
+                    outline: none;
+                }
+                button{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background-color: $secondColor;
+                    color: #f9f9f9;
+                    padding: 8px 10px;
+                    border: none;
+                    font-family: $firstFont;
+                    font-size: 16px;
+                }
+            }
+        }
+        .social-icons{
+            margin: 20px 0;
+            a{
+                color: #f9f9f9;
+                transition: .5s;
+                &:not(:first-of-type){
+                    margin-left:10px;
+                }
+                &:hover{
+                    color: $secondColor;
+                }
+            }
+
+        }
+    }
+    .foot{
+        color: #f9f9f9;
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+}
+/* end footer */
